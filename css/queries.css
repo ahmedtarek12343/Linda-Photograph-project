@@ -1,0 +1,123 @@
+/* MEDIA QUERY MANAGER */
+/*
+0 - 600px:        phone
+600 - 900px:      tablet portrait
+900 - 1200px:     tablet landscape
+[1200 - 1800px]: normal desktop
+*/
+
+/* tab landscape */
+@media only screen and (width<=75em) {
+  html {
+    font-size: 57%;
+  }
+}
+
+/* tab portrait */
+@media only screen and (width<=56.25em) {
+  html {
+    font-size: 50%;
+  }
+  .grid--2--col,
+  .grid--3--col {
+    grid-template-columns: 1fr;
+  }
+
+  .ri-menu-line {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .paragraph {
+    margin-top: 25rem;
+  }
+
+  h1 {
+    font-size: 15rem;
+  }
+
+  .heading_secondary {
+    font-size: 2rem;
+  }
+
+  .after-hero-beach {
+    align-self: flex-start;
+  }
+
+  .behind-lens-p {
+    width: 100%;
+  }
+
+  .section-behind-lens .link__container {
+    justify-content: end;
+  }
+
+  .img-p__img {
+    height: 50rem;
+  }
+
+  .intersection-img-3 {
+    height: 120rem;
+    object-position: center;
+  }
+
+  .footer-logo {
+    width: 45%;
+  }
+
+  .input-container {
+    flex-direction: column;
+  }
+
+  .sign-up-heading {
+    font-size: 2rem;
+    max-width: 100% !important;
+    display: block;
+  }
+
+  .sign-up-paragraph {
+    font-size: 1rem;
+  }
+
+  .input-container > * {
+    width: 100%;
+  }
+
+  .container {
+    padding: 0 2rem;
+  }
+
+  .intersection-heading {
+    font-size: 3rem;
+  }
+
+  .frames-heading {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    font-size: 3em;
+  }
+
+  .footer-grid {
+    column-gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .col:first-child {
+    grid-column: 1/-1;
+    margin-bottom: 6rem;
+  }
+}
+
+/* phones */
+@media only screen and (width<=37.5em) {
+  h1 {
+    font-size: 9.2rem;
+  }
+
+  .section-hero .heading_secondary {
+    font-size: 2rem;
+  }
+}
